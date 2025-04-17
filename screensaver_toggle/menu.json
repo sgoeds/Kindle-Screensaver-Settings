@@ -1,0 +1,45 @@
+{
+	"items": [
+    {
+      "name": "Ad Screensaver",
+      "priority": 0,
+      "items": [
+        {
+          "name": "Disable Ads",
+          "priority": 4,
+          "action": "./bin/ad_free.sh",
+          "status": false,
+          "internal": "disable ads and enable normal screensaver"
+        },
+        {
+          "name": "Disable all screensavers",
+          "priority": 4,
+          "action": "./bin/no_screensaver.sh",
+          "status": false,
+          "internal": "Disable ad and no ad screensaver"
+        },
+        {
+          "name": "Revert back to ads",
+          "priority": 4,
+          "action": "./bin/revert.sh",
+          "status": false,
+          "internal": "disable normal screensaver and enable ad screensaver"
+        },
+        {
+          "name": "USB Screensaver off (UNSAFE)",
+          "priority": 4,
+          "action": "./bin/usb_off.sh",
+          "status": false,
+          "internal": "disable USB connection screensaver. DANGEROUS!"
+        },
+        {
+          "name": "USB Screensaver on",
+          "priority": 4,
+          "action": "./bin/usb_on.sh",
+          "status": false,
+          "internal": "enable USB connection screensaver"
+        }
+			]
+		}
+  ]
+}
